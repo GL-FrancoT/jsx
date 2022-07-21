@@ -5,7 +5,9 @@ const el = document.getElementById('root')
 const root = ReactDOM.root(el)
 
 function App() {
-    return <h1>Hi there!</h1>
+    const inputType = "number";
+    const minValue = 5
+    return <input type={inputType} min = {minValue}/>
 }
 
 root.render(<App />)
